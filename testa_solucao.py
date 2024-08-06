@@ -90,5 +90,23 @@ class TestaSolucao(unittest.TestCase):
         for alg in [solucao.astar_hamming, solucao.astar_manhattan]:
             self.assertEqual(solucao_otima, self.run_algorithm(alg, estado))
 
+    def test_bfs(self):
+        """
+        Testa o BFS para verificar se ele retorna a sequência correta de ações para o estado 1235_6478.
+        """
+        estado_inicial = "1235_6478"
+        solucao_esperada = ['esquerda', 'abaixo', 'direita', 'direita']
+        resultado = self.run_algorithm(solucao.bfs, estado_inicial)
+        self.assertEqual(resultado, solucao_esperada)
+
+    def test_dfs(self):
+        """
+        Testa o DFS para verificar se ele retorna a sequência correta de ações para o estado 1235_6478.
+        """
+        estado_inicial = "1235_6478"
+        solucao_esperada = ['esquerda', 'abaixo', 'direita', 'direita']
+        resultado = self.run_algorithm(solucao.dfs, estado_inicial)
+        self.assertEqual(resultado, solucao_esperada)
+
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)

@@ -1,4 +1,11 @@
 # IA_T3
-repositório do trabalho 3 de IA - Fernando Mello, Henrique Lindemann e Luca PCF
 
-foi utilizada a biblioteca heapq para a implementação de heaps como fila de prioridade
+## Integrantes:
+- Henrique Lindemann - 00343234
+- Fernando Mello     - 00341727
+- Luca Fritscher     - 00343044
+
+- #### Turma B
+
+# Bibliotecas
+Foi utilizada a biblioteca heapq para a implementação de heaps como fila de prioridade.
